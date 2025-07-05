@@ -23,7 +23,7 @@ public class Product {
 	private Long Id;
 	private String name;
 	private String description;
-	private double prince;
+	private double price;
 	private String imgUrl;
 	
 	@ManyToMany
@@ -37,7 +37,7 @@ public class Product {
 		Id = id;
 		this.name = name;
 		this.description = description;
-		this.prince = prince;
+		this.price = prince;
 		this.imgUrl = imgUrl;
 	}
 
@@ -65,12 +65,12 @@ public class Product {
 		this.description = description;
 	}
 
-	public double getPrince() {
-		return prince;
+	public double getPrice() {
+		return price;
 	}
 
-	public void setPrince(double prince) {
-		this.prince = prince;
+	public void setPrice(double prince) {
+		this.price = prince;
 	}
 
 	public String getImgUrl() {
